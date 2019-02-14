@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type = "text/css">
+img{}
+img:hover
+{
+width:200px;
+height:200px;
+}
+p:hover{background-color: blue; color: white; font-size:30px}
+
+a:hover{background-color:cyan; color:red; font-size: 25px;}
+
+input:focus{background-color:yellow; color:blue; width:270px; height:32px}
+input:hover{background-color:cyan; color:red; width:270px; height:32px}
+
+}
+
+</style>

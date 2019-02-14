@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <style type = "text/css">
+      img{}
+      img{
+        position: absolute;
+        top:220px;
+        left:300px;
+      }
+      .below{
+        -webkit-box-reflect: below 5px
+          -webkit-gradient(
+            linear, right bottom, right top,
+            from(transparent), to(white)
+            );
+      }
+      .above{
+        -webkit-box-reflect: above 5px
+          -webkit-gradient(
+            linear,left top, left bottom,
+            from(transparent), to(white)
+            );
+      }
+      .right{
+        -webkit-box-reflect: right 5px
+          -webkit-gradient(
+            linear,right top, left bottom,
+            from(transparent), to(white)
+            );
+      }
+      .left{
+        -webkit-box-reflect: left 5px
+          -webkit-gradient(
+            linear,left top, right top,
+            from(transparent), to(white)
+            );
+      }
+    </style>
+</html>

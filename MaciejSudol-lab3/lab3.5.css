@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <style type = "text/css">
+
+
+  .red{
+    position: absolute;
+    top: 8px;
+    height: 50px;
+    width: 50px;
+    background: red;
+    -webkit-animation: animatered linear 5s 1s 2 alternate;
+    animation: animatered linear 5s 1s 2 alternate;
+  }
+
+  .green{
+    position: absolute;
+    right: 800px;
+    top: 8px;
+    height: 50px;
+    width: 50px;
+    background: green;
+    -webkit-animation: animategreen linear 5s 1s 2 alternate;
+    animation: animategreen linear 5s 1s 2 alternate;
+  }
+
+  .blue{
+    position: absolute;
+    bottom: 100px;
+    height: 50px;
+    width: 50px;
+    background: blue;
+    -webkit-animation: animateblue linear 5s 1s 2 alternate;
+    animation: animateblue linear 5s 1s 2 alternate;
+  }
+
+  .orange{
+    position: absolute;
+    right: 800px;
+    bottom: 100px;
+    height: 50px;
+    width: 50px;
+    background: orange;
+    -webkit-animation: animateorange linear 5s 1s 2 alternate;
+    animation: animateorange linear 5s 1s 2 alternate;
+  }
+
+  @keyframes animatered{
+    100%{
+      opacity: 0.3;
+      -webkit-transform: translate(345px,295px);
+      transform: translate(345px,295px);
+    }
+    75%{opacity: 0.4;}
+    50%{opacity: 0.5;}
+    25%{opacity: 0.6;}
+    0%{opacity: 0.7;}
+  }
+
+  @keyframes animategreen{
+    100%{
+      opacity: 0.3;
+      -webkit-transform: translate(-345px,295px);
+      transform: translate(-345px,295px);
+    }
+    75%{opacity: 0.4;}
+    50%{opacity: 0.5;}
+    25%{opacity: 0.6;}
+    0%{opacity: 0.7;}
+  }
+
+  @keyframes animateorange{
+    100%{
+      opacity: 0.3;
+      -webkit-transform: translate(-345px,-295px);
+      transform: translate(-345px,-295px);
+    }
+    75%{opacity: 0.4;}
+    50%{opacity: 0.5;}
+    25%{opacity: 0.6;}
+    0%{opacity: 0.7;}
+  }
+
+  @keyframes animateblue{
+    100%{
+      opacity: 0.3;
+      -webkit-transform: translate(345px,-295px);
+      transform: translate(345px,-295px);
+    }
+    75%{opacity: 0.4;}
+    50%{opacity: 0.5;}
+    25%{opacity: 0.6;}
+    0%{opacity: 0.7;}
+  }
+
+
+
+  </style>
+</html>

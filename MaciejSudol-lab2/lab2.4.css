@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type = "text/css">
+h{}
+  h{
+    text-align: center;
+    color: white;
+      }
+  p{}
+    p{
+      text-align: center;
+      color: white;
+    }
+  body{
+    background-color: gray;
+    text-align: center;
+  }
+  a{}
+  a:link{
+    color:blue;
+  }
+  a:visited{
+    color:blue
+  }
+</head>
+</style>

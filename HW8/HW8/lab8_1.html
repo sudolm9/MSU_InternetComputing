@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title> Clock </title>
+<script>
+// function to start the time
+function startTime() {
+    var date = new Date();
+    var h = date.getHours();
+    var m = date.getMinutes();
+    var s = date.getSeconds();
+    var ml = date.getMilliseconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    ml = ml%10;
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s + ":" + ml;
+    // update time after everey 100 milli second
+    var t = setTimeout(startTime, 100);
+}
+// add 0 to time
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body align="center">
+<br><br>
+
+<b><p style="font-size:20px"><div size=20px id="txt"></div><b>
+<br>
+
+<button type="submit" onclick="startTime()" > What time is it? </button>
+
+</body>
+</html>

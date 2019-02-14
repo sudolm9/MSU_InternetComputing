@@ -1,0 +1,51 @@
+<html>
+
+<script type='text/javascript'>
+
+while(1)
+
+{
+
+  var num = prompt("Enter Number between 1 and 20", "0");
+
+  var num2 = prompt("Enter Number between 1 and 20", "0");
+
+  var num2=parseInt(num2);
+
+  var num = parseInt(num);
+
+if(num>=num2 ||num>20||num2>20)
+
+  {
+
+    continue;
+
+  }
+
+else
+
+  {
+
+    var i = 0;
+
+    document.write('<table border="2" cellspacing="1" align="center"><col width="150"><col width="150"><col width="150">');
+
+      document.write("<tr><td>number</td><td>square</td><td>cube</td></tr>");
+
+    for(i=num;i<=num2;i++) {
+
+      document.write("<tr><td>" + i + "</td><td>" + i*i + "</td><td>" + i*i*i + "</td></tr>");
+
+    }
+
+    document.write("</table>");
+
+    break;
+
+  }
+
+  }
+
+</script>
+
+</html>

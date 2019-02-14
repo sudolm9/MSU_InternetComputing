@@ -1,0 +1,78 @@
+<html>
+   <head>
+
+       <title>Bouncing Ball</title>
+       <!-- The CSLogo is copied from cs web site which has -->
+       <!-- width 102px; and height 102 px -->
+       <!-- the div.bound set up a boundary for cs_logo2.png to bouncing
+       -->
+       <style>
+           div.bound {
+               display:block;
+               border-style:solid;
+               width:800px;
+               height:600px;
+               border-width:5px
+           }
+
+           div.move {
+               position:absolute;
+           }
+       </style>
+
+       <script type="text/javascript">
+           var x = 0; //Starting x coord.
+           var y = 0; //Starting y coord.
+           var max_x = 600; //maximum x coord.
+           var max_y = 400; //maximum y coord.
+           var xoffset = 10; //Move 10px every step
+           var yoffset = 10; //Move 10px every step
+
+           function change_bouncing_speed(speed_option) {
+
+               var speed = 0;
+               if(speed_option == 1){
+                   speed = 50;
+               }else if(speed_option == 2){
+                   speed = 100 ;
+               }else if(speed_option == 3){
+               speed = 200 ;
+               }
+               alert(speed);
+               go(speed);
+           }
+
+           function go(bouncing_speed) {
+               moveBall(bouncing_speed);
+           }
+           function moveBall(bouncing_speed) {
+               x = x + xoffset;
+               y = y + yoffset;
+               //Move the image to the new location
+               document.getElementById("ball").style.top = y+'px';
+               document.getElementById("ball").style.left = x+'px';
+               //if reach boundaries, reset offset vectors
+               if ((x+xoffset > max_x) || (x+xoffset < 0))
+                   xoffset *=-1;
+               if ((y+yoffset > max_y) || (y+yoffset < 0))
+                   yoffset *=-1;
+               window.setTimeout('moveBall('+bouncing_speed+')',bouncing_speed);
+           }
+       </script>
+   </head>
+   <body onload="go(100)">
+       <div class="bound">
+           <div id="ball" class="move">
+               <img src="ball.jpeg" height = "200px" width = "200px" alt="need image here" />
+           </div>
+       </div>
+       <div>
+           <select id="image_bouncing_speed" onchange = "change_bouncing_speed(this.value)">
+               <option value = ""> Select the Bounce Speed </option>
+               <option value = "1"> 1: Double Speed </option>
+               <option value = "2"> 2: Same Speed </option>
+               <option value = "3"> 3: Half Speed </option>
+           </select>
+       </div>
+   </body>
+</html>

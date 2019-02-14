@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+</head>
+<body>
+   <form action="lab4_1.php" method="post">
+       Please complete the form to submit feedback: <br><br>
+       Name:
+       <SELECT name="prefix">
+           <option value="Mr.">Mr.</option>
+           <option value="Mrs.">Mrs.</option>
+           <option value="Ms.">Ms.</option>
+       </SELECT>
+       <input type="text" name="name"> <br><br>
+       Email Address: <input type="text" name="email"><br><br>
+       Phone number: <input type ="number" name="phone"><br><br>
+       Rating...
+       <input type="radio" name="rating" value="excellent">excellent
+       <input type="radio" name="rating" value="okay">okay
+       <input type="radio" name="rating" value="boring">boring<br><br>
+       Comment:<textarea rows="4" cols="50" name="comments"></textarea><br><br>
+       <input name ="submit" type="submit" value="Send My Feedback">
+   </form>
+</body>
+</html>

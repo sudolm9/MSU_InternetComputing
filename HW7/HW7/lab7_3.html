@@ -1,0 +1,89 @@
+<html>
+
+<head>
+
+<script>
+
+function readNumber() {
+
+var num
+
+while (true) {
+
+
+
+num = parseInt(prompt("Enter a number: "));
+
+
+
+if (num < 5 || num > 20) {
+
+alert("Enter number should range 5 - 20");
+
+}
+
+else {
+
+
+
+break;
+
+}
+
+}
+
+return num;
+
+}
+
+function render() {
+
+
+
+var num1 = readNumber();
+
+var num2 = readNumber();
+
+var num3 = readNumber();
+
+// print red star
+
+for (var i = 0; i < num1; i++) {
+
+document.getElementById("div1").innerHTML += "*";
+
+}
+
+// print yellow star
+
+for (var i = 0; i < num2; i++) {
+
+document.getElementById("div2").innerHTML += "*";
+
+}
+
+// print blue star
+
+for (var i = 0; i < num3; i++) {
+
+document.getElementById("div3").innerHTML += "*";
+
+}
+
+}
+
+</script>
+
+</head>
+
+<body onload="render()">
+
+<div style="color:red" id="div1"></div>
+
+<div style="color:yellow" id="div2"></div>
+
+<div style="color:blue" id="div3"></div>
+
+</body>
+
+</html>

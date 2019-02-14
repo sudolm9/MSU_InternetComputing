@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Shopping</title>
+</head>
+<body>
+<div style="width:345px; margin:0 auto; border-style: solid; border-width: 2px; border-color:red; padding:10px;">
+<h3>Fill out this form to calculate the total cost:</h3>
+   <form action="lab4_2.php" method="post">
+        Price:<input type="text" name="price" size="10"><br><br>
+       Quantity:<input type="text" name="qty" size="10"><br><br>
+       Discount:<input type="text" name="discount" size="10"><br><br>
+       Tax:<input type="text" name="tax" size="4">(%)<br><br>
+       Shipping method:
+                   <select name="method">
+                       <option value="5.00">Slow and steady</option>
+                       <option value="9.95">Put a move on it</option>
+                       <option value="19.95">I need it yesterday</option>
+                   </select><br><br>
+       Number of payment to make:<input type="text" name="noOfPayment" size="10"><br><br>
+        <input type="submit" value="Calculate!" name="submit">
+    </form>
+</div>
+</body>
+</html>

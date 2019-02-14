@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <head>
+    <title> Double click to change color </title>
+    </head>
+
+<h2 ondblclick="handleClick()" id="colorChanger">Welcome to CSIT: Click me to change color.</h2>
+
+<p id="colorChanger"></p>
+<!-- Double click on the line of text to change   -->
+<script>
+function getRC() {
+var letters = '0123456789ABCDEF';
+var color = '#';
+for (var i = 0; i < 6; i++) {
+color += letters[Math.floor(Math.random() * 16)];
+}
+return color;
+}
+function handleClick() {
+document.getElementById('colorChanger').style.color = getRC();
+}
+</script>
+
+</body>
+</html>
